@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+
+        }
+
+        div{
+            margin: auto;
+            width: 300px;
+            height: 70px;
+            background: pink;
+            text-align: center;
+            padding-top: 20px;
+            border-radius: 15px;
+            position: relative;
+            animation: myframes 10s;
+            animation-direction: alternate;
+            animation-iteration-count: 100;
+        }
+
+        @keyframes myframes {
+            0%{background: pink; left: 0; top: 0; width: 300px}
+            50%{background: orange; left: 0; top: 600px; width: 600px}
+            100%{background: pink; left: 0; top: 0; width: 300px}
+        }
+    </style>
+    <script>
+        function clock() {
+            var date = new Date();
+            var y = date.getFullYear();
+            var M = date.getMonth()+1;
+            var d = date.getDate();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            h = c1(h);
+            m = c1(m);
+            s = c1(s);
+            var w =date.getDay();
+            switch (w){
+                case 0:
+                    w = "星期天";
+                    break;
+                case 1:
+                    w = "星期一";
+                    break;
+                case 2:
+                    w = "星期二";
+                    break;
+                case 3:
+                    w = "星期三";
+                    break;
+                case 4:
+                    w = "星期四";
+                    break;
+                case 5:
+                    w = "星期五";
+                    break;
+                case 6:
+                    w = "星期六";
+                    break;
+                default:
+                    break;
+            }
+
+            document.getElementById("clock").innerHTML = y+"年"+M+"月"+d+"日 "+h+":"+m+":"+s+"   "+w+"<br>";
+            /*if(h<12){
+                document.write("Good Morning");
+            }else if(h>=12&&h<18) {
+                document.write("Good Afternoon");
+            } else{
+                document.write("Goos Day");
+            }*/
+        }
+
+        function c1(i) {
+            if(i<10)
+                i = '0'+i
+            return i;
+        }
+
+        window.setInterval("clock()",1000);
+    </script>
+</head>
+<body>
+    <div id="clock"></div>
+</body>
+</html>
