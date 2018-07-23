@@ -1,0 +1,878 @@
+body,
+div,
+p,
+span,
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+a,
+img,
+input,
+i,
+em,
+strong,
+del,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    min-width: 1366px;
+    background-color: #ebe6ea;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong{
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+.w {
+    width: 1202px;
+    margin: 0 auto;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    content: '';
+    height: 0px;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*主页开始*/
+.index {
+    width: 100%;
+    background: url("imgs/bg.jpg") no-repeat center center;
+    position: relative;
+}
+
+/*顶部开始*/
+.top {
+    height: 55px;
+    /*width: 1366px;*/
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    position: relative;
+}
+
+.inner {
+    height: 55px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+}
+
+.logo a {
+    height: 44px;
+    width: 133px;
+    display: block;
+    background: url("imgs/logo.jpg");
+    float: left;
+    text-indent: -999px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.nav-bar {
+    height: 55px;
+    float: right;
+    line-height: 55px;
+
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar li a {
+    color: #333;
+    display: block;
+    height: 53px;
+    padding: 0px 12px;
+}
+
+.nav-bar li:nth-child(3) a {
+    color: #bc2e2e;
+}
+
+.nav-bar li a:hover {
+    background: #f3f3f3;
+    border-bottom: 3px solid #bc2e2e;
+}
+
+/*顶部结束*/
+
+
+/*主题内容开始*/
+.bg {
+    width: 1366px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    margin-left: -683px;
+}
+
+.main {
+    width: 100%;
+    height: 821px;
+    position: relative;
+}
+
+.main .jiuzhou a {
+    width: 400px;
+    height: 100px;
+    background: url("imgs/01.jpg") no-repeat;
+    background-size: 400px;
+    position: absolute;
+    left: 27px;
+    top: 58px;
+}
+
+/*导航*/
+.nav {
+    position: absolute;
+    right: 23px;
+    top: 57px;
+}
+
+.nav li {
+    float: left;
+    cursor: pointer;
+}
+
+.nav li a {
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    padding: 0px 15px 8px;
+    vertical-align: middle;
+}
+
+.nav li:first-child a {
+    color: #644637;
+    border-bottom: 1px solid #644637;
+}
+
+.nav li a:hover {
+    color: #644637;
+    border-bottom: 1px solid #644637;
+}
+
+.nav li i {
+    display: inline-block;
+    width: 10px;
+    height: 21px;
+    background: url("imgs/05.jpg");
+    vertical-align: middle;
+    margin: 0px 13px;
+}
+
+.main-top {
+    height: 1033px;
+    position: relative;
+}
+
+.main .message01 {
+    position: absolute;
+    width: 755px;
+    height: 188px;
+    background: url("imgs/03.jpg");
+    top: 183px;
+    left: 50%;
+    margin-left: -608px;
+}
+
+.main .message02 {
+    width: 636px;
+    height: 46px;
+    position: absolute;
+    background: url("imgs/06.jpg");
+    top: 384px;
+    left: 50%;
+    margin-left: -534px;
+}
+
+.main .download {
+    position: absolute;
+    width: 330px;
+    height: 198px;
+    top: 492px;
+    left: 50%;
+    margin-left: -408px;
+}
+
+.download .qr {
+    width: 120px;
+    height: 120px;
+    background: url("imgs/07.jpg") no-repeat;
+    background-size: 120px;
+    float: left;
+}
+
+.download .qr i {
+    width: 127px;
+    height: 7px;
+    background: url("imgs/13.jpg") no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+
+.download .stroe a {
+    width: 188px;
+    height: 57px;
+    background: url("imgs/08.jpg");
+    margin-bottom: 10px;
+    float: right;
+}
+
+.download .android a {
+    width: 191px;
+    height: 58px;
+    background: url("imgs/09.jpg");
+    margin-bottom: 10px;
+    float: right;
+}
+
+.download .android a:hover {
+    background: url("imgs/09-2.jpg");
+    background-size: 191px;
+}
+
+.download .pc-versions a {
+    width: 329px;
+    height: 63px;
+    background: url("imgs/10.jpg");
+    float: left;
+}
+
+.main .overturn a {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    background: url("imgs/12.jpg");
+    top: 358px;
+    left: 50%;
+    margin-left: 104px;
+}
+
+/*新闻资讯开始*/
+.journalism {
+    height: 522px;
+    width: 1205px;
+    margin: 0 auto;
+}
+
+.journalism .new-title {
+    width: 557px;
+    height: 57px;
+    margin: 0 auto;
+    background: url("imgs/15.jpg");
+    margin-bottom: 30px;
+}
+
+.journalism .auto-play {
+    float: left;
+    width: 693px;
+    height: 316px;
+    position: relative;
+    overflow: hidden;
+}
+
+.journalism .auto-play .pic {
+    position: absolute;
+    width: 2772px;
+    height: 316px;
+}
+
+.journalism .auto-play .pic li {
+    float: left;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.auto-play .idx {
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    bottom: 13px;
+}
+
+.journalism .auto-play .idx li {
+    float: left;
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+    background: url("imgs/19-2.jpg") no-repeat;
+    cursor: pointer;
+}
+
+.journalism .auto-play .idx li:first-child {
+    background: url("imgs/19.jpg") no-repeat;
+}
+
+.journalism .new-particulars {
+    width: 461px;
+    height: 316px;
+    float: right;
+    margin-left: 25.5px;
+}
+
+.title-information {
+    height: 58px;
+    background: url("imgs/20.jpg") no-repeat center 57px;
+    background-size: 461px;
+}
+
+.particulars-title {
+    float: left;
+}
+
+.particulars-title li {
+    float: left;
+    margin-right: 40px;
+    font-size: 16px;
+    line-height: 54px;
+}
+
+.particulars-title li a {
+    display: block;
+    color: #a59066;
+    width: 35px;
+}
+
+.particulars-title ul .current {
+    border-bottom: 6px solid #ab976d;
+    font-weight: 700;
+}
+
+.new-particulars .more {
+    float: right;
+    width: 78px;
+    height: 23px;
+    background: #ab976d;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    line-height: 23px;
+}
+
+.new-particulars .more a {
+    display: block;
+    color: #e9e2d5;
+}
+
+.new-particulars .more a:hover {
+    color: #fff;
+}
+
+.new-particulars .discount {
+    width: 453px;
+    height: 34px;
+    background: #f98018;
+    margin: 15px 4px 0px;
+}
+
+.discount-left {
+    float: left;
+    width: 40px;
+    height: 100%;
+    background: #ffe04e;
+    color: #5f4800;
+    line-height: 34px;
+    text-align: center;
+    font-size: .24rem;
+    position: relative;
+}
+
+.discount-left i {
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-left: 5px solid #ffe04e;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.discount a {
+    float: left;
+    height: 100%;
+    padding-left: 14px;
+    font-size: 14px;
+    line-height: 34px;
+    color: #fff;
+}
+
+.activity ul {
+    display: none;
+}
+
+.activity ul:first-child {
+    display: block;
+}
+
+.activity li {
+    border-bottom: 1px dashed #534c66;
+}
+
+.activity a {
+    display: block;
+    font-size: 14px;
+    color: #a59066;
+    line-height: 39px;
+}
+
+.activity a span {
+    display: inline-block;
+    width: 336px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.activity a i {
+    float: right;
+}
+/*新闻资讯结束*/
+
+/*游戏特色开始*/
+.feature {
+    width: 1205px;
+    height: 774px;
+    margin: 0 auto;
+}
+
+.feature .feature-title {
+    width: 557px;
+    height: 57px;
+    margin: 0 auto;
+    background: url("imgs/21.jpg") no-repeat;
+    margin-bottom: 40px;
+}
+
+.feature-content {
+    width: 1205px;
+    height: 520px;
+    overflow: hidden;
+}
+
+.feature-content li {
+    float: left;
+}
+
+.feature-content li .s-img {
+    float: left;
+    width: 119px;
+    height: 520px;
+    background: url("imgs/22.jpg") no-repeat;
+    display: block;
+}
+
+.feature-content li .b-img {
+    float: left;
+    width: 693px;
+    height: 520px;
+    background: url("imgs/23.jpg") no-repeat;
+    background-size: 693px;
+    display: none;
+}
+
+.feature-content li:nth-child(1) .s-img {
+    display: none;
+}
+
+.feature-content li:nth-child(1) .b-img {
+    display: block;
+}
+
+.feature-content li:nth-child(2) .s-img {
+    background: url("imgs/24.jpg") no-repeat;
+}
+
+.feature-content li:nth-child(3) .s-img {
+    background: url("imgs/26.jpg") no-repeat;
+}
+
+.feature-content li:nth-child(4) .s-img {
+    background: url("imgs/28.jpg") no-repeat;
+}
+
+.feature-content li:nth-child(5) .s-img {
+    background: url("imgs/30.jpg") no-repeat;
+}
+
+.feature-content li:nth-child(2) .b-img {
+    background: url("imgs/25.jpg") no-repeat;
+    background-size: 693px;
+}
+
+.feature-content li:nth-child(3) .b-img {
+    background: url("imgs/27.jpg") no-repeat;
+    background-size: 693px;
+}
+
+.feature-content li:nth-child(4) .b-img {
+    background: url("imgs/29.jpg") no-repeat;
+    background-size: 693px;
+}
+
+.feature-content li:nth-child(5) .b-img {
+    background: url("imgs/31.jpg") no-repeat;
+    background-size: 693px;
+}
+/*游戏特色结束*/
+
+/*职业介绍开始*/
+.profession {
+    height: 940px;
+}
+
+.profession-title {
+    width: 557px;
+    height: 57px;
+    margin: 0px  auto 38px;
+    background: url("imgs/48.jpg");
+}
+
+.profession-particulars {
+    height: 769px;
+    position: relative;
+    background: url("imgs/47.jpg") no-repeat center center;
+    background-size: 130% auto;
+}
+
+.person-introduce {
+    position: absolute;
+    left: 50px;
+    top: 55px;
+    width: 549px;
+    overflow: hidden;
+}
+
+.person-introduce li {
+    float: left;
+    display: none;
+}
+
+.person-introduce li:first-child {
+    display: block;
+}
+
+.portrait {
+    position: absolute;
+    right: -218px;
+    top: -110px;
+    width: 902px;
+    height: 812px;
+    overflow: hidden;
+}
+
+.portrait li {
+    position: absolute;
+    display: none;
+    right: -902px;
+}
+
+.portrait li:first-child {
+    display: block;
+    right: 0px;
+}
+
+.profession-particulars .btn {
+    height: 34px;
+    width: 774px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -350px;
+}
+
+.profession-particulars .btn li {
+    float: left;
+}
+
+.profession-particulars .btn ul i {
+    width: 21px;
+    height: 34px;
+    float: left;
+    background: url("imgs/46.jpg") no-repeat;
+    margin: 0px 15px;
+}
+
+.profession-particulars .btn li a {
+    display: block;
+    width: 74px;
+    height: 34px;
+    font-size: 18px;
+    color: #959086;
+    text-align: center;
+    line-height: 34px;
+}
+
+.profession-particulars .btn li.pic {
+    background: url("imgs/49.jpg") no-repeat;
+    background-size: 74px;
+}
+
+.profession-clock a {
+    width: 84px;
+    height: 86px;
+    background: url("imgs/44.jpg");
+    position: absolute;
+    z-index: 99;
+    left: 350px;
+    top: 350px;
+}
+/*职业介绍结束*/
+
+/*游戏影音开始*/
+.game-media {
+    width: 1236px;
+    height: 865px;
+    margin: 0 auto;
+}
+
+.media-title {
+    width: 557px;
+    height: 57px;
+    margin: 0px auto 20px;
+    background: url("imgs/57.jpg");
+}
+
+.media-nav {
+    width: 625px;
+    height: 37px;
+    margin: 0px 0px 15px 320px;
+    text-align: center;
+    line-height: 37px;
+}
+
+.media-nav li {
+    float: left;
+}
+
+.media-nav a.red-bg {
+    background: url("imgs/56.jpg") no-repeat;
+    color: #ebe2d1;
+}
+
+.media-nav li a {
+    display: block;
+    width: 75px;
+    height: 37px;
+    font-size: 14px;
+    color: #ac986e;
+    text-align: center;
+}
+
+.media-nav i {
+    width: 23px;
+    height: 23px;
+    background: url("imgs/58.jpg") no-repeat;
+    float: left;
+    margin: 7px 16px 0px;
+}
+
+.game-video {
+    width: 1236px;
+    height: 566px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.game-video li {
+    float: left;
+    position: relative;
+    width: 371px;
+    height: 226px;
+    margin: 15px 20px;
+    background: url("imgs/50-2.jpg") no-repeat;
+}
+
+.game-video li i {
+    width: 371px;
+    height: 226px;
+    position: absolute;
+    z-index: 100;
+    display: block;
+    background: rgba(0,0,0,0.6);
+}
+
+.game-video li:nth-child(2) {
+    background: url("imgs/51-2.jpg") no-repeat;
+}
+
+.game-video li:nth-child(3) {
+    background: url("imgs/52-2.jpg") no-repeat;
+}
+
+.game-video li:nth-child(4) {
+    background: url("imgs/53-2.jpg") no-repeat;
+}
+
+.game-video li:nth-child(5) {
+    background: url("imgs/54-2.jpg") no-repeat;
+}
+
+.game-video li:nth-child(6) {
+    background: url("imgs/55-2.jpg") no-repeat;
+}
+
+.game-video .game-clock {
+    width: 65px;
+    height: 65px;
+    background: url("imgs/44.jpg") no-repeat center center;
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    margin-left: -42px;
+    top: 50%;
+    margin-top: -43px;
+}
+/*游戏影音结束*/
+
+/*底部开始*/
+.foot {
+    height: 155px;
+    background: #04111b;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    margin-top: 266px;
+}
+
+.foot-inner {
+    width: 930px;
+    height: 140px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.inner-top {
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.foot-inner .inner-left {
+    float: left;
+    width: 470px;
+    height: 48px;
+}
+
+.foot-inner .inner-left li {
+    float: left;
+}
+
+.foot-inner .inner-left li:nth-child(1) {
+    width: 118px;
+    height: 36px;
+    background: url("imgs/59.jpg") no-repeat;
+    background-size: 118px;
+}
+
+.foot-inner .inner-left li:nth-child(2) {
+    width: 134px;
+    height: 31px;
+    background: url("imgs/60.jpg") no-repeat;
+    background-size: 134px;
+    margin: 5px 15px 0px 0px;
+}
+
+.foot-inner .inner-left li:nth-child(3) {
+    width: 83px;
+    height: 30px;
+    background: url("imgs/61.jpg") no-repeat;
+    background-size: 83px;
+    margin: 5px 15px 0px 0px;
+}
+
+.foot-inner .inner-left li:nth-child(4) {
+    width: 90px;
+    height: 30px;
+    background: url("imgs/62.jpg") no-repeat;
+    background-size: 90px;
+    margin: 5px 15px 0px 0px;
+}
+
+.foot-inner .inner-right {
+    float: left;
+}
+
+.foot-inner .inner-right .right-p1 a {
+    font-size: 12px;
+    color: #fff;
+}
+
+.foot-inner .inner-right .right-p1 a:hover {
+    text-decoration: underline;
+}
+
+.foot-inner .right-p2 {
+    margin-top: 10px;
+    width: 410px;
+    line-height: 20px;
+}
+
+.foot-inner .right-p2 a {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 252px;
+    vertical-align: middle;
+    margin-top: -48px;
+    color: #fff;
+    background: #610000;
+}
+
+.foot-inner .foot-p {
+    margin: 10px 0px;
+}
+/*底部结束*/
